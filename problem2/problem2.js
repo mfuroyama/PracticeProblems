@@ -2,7 +2,11 @@
 
 // ==== Implement your code here! ====
 function max(array) {
+    console.log(Math.max(10, 15, NaN)); 
+    // returns NaN 
 
+    console.log(Math.max( -3, 5, 1, 0, -2));
+    // returns 5
 }
 
 
