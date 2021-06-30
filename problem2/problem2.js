@@ -3,7 +3,7 @@
 // ==== Implement your code here! ====
 function max(array) {
     var max = array[0];
-    for(var i=1; i<array.length; i++) {
+    for(var i=0; i<array.length; i++) {
         if(max < array[i]) {
             max = array[i];
         }
