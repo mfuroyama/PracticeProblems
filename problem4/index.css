@@ -1,0 +1,31 @@
+body {
+    background-color: lightslategrey;
+}
+
+.title {
+    text-align: center;
+}
+
+.dialog {
+    background-color: silver;
+    margin: auto;
+    width: 50vw;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.spacer {
+    margin-top: 10px;
+}
+
+.converted-value {
+    font-weight: bold;
+}
