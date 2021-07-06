@@ -2,7 +2,12 @@
 
 // ==== Implement your code here! ====
 function greetUser(object) {
-
+    if (object.user = object.user)  {
+        return 'Hello ' + object.user
+    }
+    else {
+        return 'No user found'
+    }
 }
 
 
@@ -20,7 +25,6 @@ assert.deepStrictEqual(greetUser({
     lastName: 'Smith',
     user: 'Joe',
 }), 'Hello Joe');
-
 assert.deepStrictEqual(greetUser({
     id: 00000,
     error: 'Unknown user',
