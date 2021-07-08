@@ -5,10 +5,12 @@ var fahrenheitValue = document.getElementById('fahrenheit-value');
 // ==== Implement your code here! ====
 function convert(celsiusValue) {
     console.log(celsiusValue);
-
-    fahrenheitValue.innerHTML = 'Your answer goes here';
+    
+    fahrenheitValue.innerHTML = (celsiusValue*9/5)+32;
+    
 }
-
+    
+       
 button.onclick = function() {
     convert(celsiusInput.value);
 }
