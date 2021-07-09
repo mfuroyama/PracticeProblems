@@ -6,11 +6,7 @@ var fahrenheitValue = document.getElementById('fahrenheit-value');
 function convert(celsiusValue) {
     console.log(celsiusValue);
 
-    if (isNaN(celsiusValue)) {
-        return fahrenheitValue.innerHTML = 'Error!';
-    }
-    
-    fahrenheitValue.innerHTML = (celsiusValue*9/5)+32;
+    fahrenheitValue.innerHTML = 'Your answer goes here';
 }
 
 button.onclick = function() {
