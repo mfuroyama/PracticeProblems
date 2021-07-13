@@ -1,17 +1,16 @@
 var button = document.getElementById('convert-button');
 var celsiusInput = document.getElementById('celsius-value');
-var kelvinValue = document.getElementById('kelvin-value');
+var fahrenheitValue = document.getElementById('fahrenheit-value');
 
 // ==== Implement your code here! ====
 function convert(celsiusValue) {
     console.log(celsiusValue);
 
     if (isNaN(celsiusValue)) {
-        return kelvinValue.innerHTML = 'Error!';
+        return fahrenheitValue.innerHTML = 'Error!';
     }
 
-    kelvinValue.innerHTML = (celsiusValue*1)+273.15;
-
+    fahrenheitValue.innerHTML = (celsiusValue*1)+273.15;
 }
 
 button.onclick = function() {
