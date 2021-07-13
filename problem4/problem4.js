@@ -4,7 +4,6 @@ var fahrenheitValue = document.getElementById('fahrenheit-value');
 
 // ==== Implement your code here! ====
 function convert(celsiusValue) {
-    console.log(celsiusValue);
 
     if (isNaN(celsiusValue)) {
         return fahrenheitValue.innerHTML = 'Error!';
