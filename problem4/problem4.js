@@ -1,17 +1,14 @@
 var button = document.getElementById('convert-button');
 var celsiusInput = document.getElementById('celsius-value');
+var fahrenheitValue = document.getElementById('fahrenheit-value');
 var kelvinValue = document.getElementById('kelvin-value');
+var radio = document.getElementById('fahrenheit-value');
+var radio = document.getElementById('kelvin-value');
 
 // ==== Implement your code here! ====
-function convert(celsiusValue) {
-
-    if (isNaN(celsiusValue)) {
-        return kelvinValue.innerHTML = 'Error!';
-    }
-
-    kelvinValue.innerHTML = (celsiusValue*1)+273.15;
-}
-
+function convert(celsiusValue) 
+    
+    
 button.onclick = function() {
     convert(celsiusInput.value);
 }
