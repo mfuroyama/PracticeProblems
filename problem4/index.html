@@ -15,13 +15,20 @@
 
     <div class="card dialog">
         <div class="card-body">
-            <h5 class="card-title">Convert Celsius to Fahrenheit</h5>
-            <label for="celsius-value" class="form-label">Temperature (Celsius)</label>
+            <h5 class="card-title">Celsius Conversion</h5>
+            <input type="radio" id="fahrenheit-value" 
+            name="temperature" value="Fahrenheit" checked>
+            <label for="fahrenheit-value">Fahrenheit</label>
+            <div class="spacer"></div>
+            <input type="radio" id="kelvin-value"
+            name="temperature" value="Fahrenheit">
+            <label for="kelvin-value">Kelvin</label>
             <input type="text" class="form-control" id="celsius-value">
             <button type="button" class="btn btn-primary" id="convert-button">Convert</button>
-            <div class="spacer" />
-            <label for="fahrenheit-value" class="form-label">Temperature (Fahrenheit): </label>
+            <div class="spacer">
+            <label for="-value" class="form-label">Temperature: </label>
             <div class="converted-value" id="fahrenheit-value"></div>
+            <div class="converted-value" id="kelvin-value"></div>
         </div>
       </div>
 
