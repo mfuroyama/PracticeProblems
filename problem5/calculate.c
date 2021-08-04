@@ -18,6 +18,12 @@ float divide(float a, float b) {
     return a/b;
 }
 
+/* Here, "numbers" is the array of numbers, "length" is the length of the array */
+int total(int numbers[], int length) {
+    /* Add your code here */
+
+}
+
 int main() {
 
     int sum = add(2, 4);
@@ -31,6 +37,11 @@ int main() {
 
     float quotient = divide(5.0, 0.1);
     printf("divide: 5.0 / 0.1 = %0.1f (should be 50.0)\n", quotient);
+
+    int numbers[7] = { 5, 4, 1, 0, 9, 10, 11 };
+    int grandTotal = total(numbers, sizeof(numbers) / sizeof(numbers[0]));
+
+    printf("total of numbers is %d (should be 40)", grandTotal);
 
     return 0;
 }
