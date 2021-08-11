@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
 
 /* Create your add and subtract functions here */
 
@@ -20,6 +22,7 @@ float divide(float a, float b) {
 
 /* Here, "numbers" is the array of numbers, "length" is the length of the array */
 int total(int numbers[], int length) {
+
     int sum = 0; 
     int i = 0;
 
@@ -28,8 +31,14 @@ int total(int numbers[], int length) {
     }
 
     return sum;
-
 }
+
+
+
+bool areStringsEqual(const char* first, const char* second) {
+}
+
+
 
 int main() {
 
@@ -47,8 +56,23 @@ int main() {
 
     int numbers[7] = { 5, 4, 1, 0, 9, 10, 11 };
     int grandTotal = total(numbers, sizeof(numbers) / sizeof(numbers[0]));
-
     printf("total of numbers is %d (should be 40)", grandTotal);
+
+
+    bool result;
+    char *foo;
+
+    result = areStringsEqual("add", "subtract");
+    foo = (result == true ? "yes" : "no");
+    printf("Is \"add\" equal to \"subtract\"? %s (should be no)\n", foo);
+
+    result = areStringsEqual("add", "add");
+    foo = (result == true ? "yes" : "no");
+    printf("Is \"add\" equal to \"add\"? %s (should be yes)\n", foo);
+
+    result = areStringsEqual("subtract", "sub");
+    foo = (result == true ? "yes" : "no");
+    printf("Is \"subtract\" equal to \"sub\"? %s (should be no)\n", foo);
 
     return 0;
 }
