@@ -22,8 +22,17 @@ float divide(float a, float b) {
 
 /* Here, "numbers" is the array of numbers, "length" is the length of the array */
 int total(int numbers[], int length) {
-    return 40;
+
+    int sum = 0; 
+    int i = 0;
+
+    for(i = 0; i < length; i+=1) {
+        sum = sum + numbers[i];
+    }
+
+    return sum;
 }
+
 
 
 bool areStringsEqual(const char* first, const char* second) {
