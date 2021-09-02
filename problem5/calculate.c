@@ -36,6 +36,17 @@ int total(int numbers[], int length) {
 
 
 bool areStringsEqual(const char* first, const char* second) {
+
+int result = strcmp(first, second);
+
+if(result == 0) {
+    return true;
+}
+
+else {
+    return false;
+}
+
 }
 
 
